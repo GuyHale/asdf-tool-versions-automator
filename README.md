@@ -4,7 +4,13 @@
 
 `makeNode is a Unix command, written in zsh, that will come in handy if you use asdf to manage your different versions of nodejs, yarn, redis, rails etc`
 
-****
+## Arguments
+
+`Argument 1: the name of the directory you want to create and store the .tool-versions in. Commonly, this will be the directory of the application you want to make.`
+
+`Argument 2: The version of node you specifically want to include in the .tool-versions file. There is a $cur_node variable you can use to set a default nodejs version, that will automatically be included in the .tool-versions file if no second argument is provided`.
+
+## Motivation
 
 1. Since using asdf, I've found it really annoying that every time I want to use node or any asdf plugin (Yarn, rails, etc), I have to manually create a .tool-versions file and write out the versions I want to use.`
 
@@ -17,6 +23,8 @@
 5. Including this function in your .zshrc file will alleviate this, also definitely modify/extend the function to include other asdf plugins in the .tool-versions as well. I just most commonly use nodejs.
 
 6. Remember to update $cur_node=18.8.0 with the latest versions of nodejs as they're released, or whichever version you want to add by default.
+
+## Usage
 
 **Step 1**
 
