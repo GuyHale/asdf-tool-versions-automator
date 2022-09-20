@@ -1,0 +1,35 @@
+function makeNode (){
+    #A function that automatically creates a directory with a nested .tool-versions file,
+    #that contains nodejs <some version>, only helps if you have asdf or some version
+    #manager installed
+    
+    echo "Running $0"
+    cur_node=18.8.0 #set this to the latest version of node currently available
+    if [ -z "$1" ]
+     then
+     #if no first argument (directory name) is specified, exit with code 1 and write to terminal
+        echo "Please pass a directory name as the first argument"
+        exit 1;
+    fi
+    # Only get this far if a dir_name has been provided
+    # create this dir_name and cd into it
+    mkdir -p $1
+    cd $1
+    if [ -z "$2" ]
+     then
+     #if no node version provided (no second argument)
+     #default to cur_node provided at top of func
+        echo "No node version specified, reverting to $cur_node"
+    else
+    #if a node version is specified, set cur_node=$2
+        echo "Node version $2 specified."
+        cur_node=$2
+    fi
+
+    #create a .tool-versions file (we're currently in created directory)
+    #write nodejs $cur_node into .tool-versions
+    touch .tool-versions
+    echo "nodejs $cur_node" > .tool-versions
+    echo "Successfully appended nodejs $cur_node into a .tool-versions file in dir=$1"
+
+}
