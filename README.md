@@ -24,9 +24,11 @@
 
 6. Remember to update $cur_node=18.8.0 with the latest versions of nodejs as they're released, or whichever version you want to add by default.
 
-## Usage
+## Usage - vsCode 
 
 **Step 1**
+
+`Follow along with other IDEs but code command won't work (code x simply opens file x in vscode fyi)`
 
 `MacOS: open your .zshrc file in code with code ~/.zshrc`
 
@@ -34,7 +36,7 @@
 
 **Step 2**
 
-`Copy the contents of makeNodeFunx.txt into the .zshrc file`
+`Copy the contents of makeNodeFunc.txt into the .zshrc file`
 
 `cmd + s (save)`
 
@@ -43,7 +45,7 @@
 `Open a new terminal and command:`
 `autoload -Uz makeNode`
 
-`U in -Uz causes the function to be marked for autoloading and also causes alias expansion to be suppressed when the function is loaded. z in -Uz instructs the shell to use zsh rather than ksh`
+`U in -Uz causes the makeNode to be marked for autoloading and alias expansion to be suppressed when the function is loaded. z in -Uz instructs the shell to use zsh rather than ksh`
 
 **Finished**
 
