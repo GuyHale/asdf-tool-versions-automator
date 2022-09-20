@@ -12,9 +12,9 @@
 
 ## Motivation
 
-1. Since using asdf, I've found it really annoying that every time I want to use node or any asdf plugin (Yarn, rails, etc), I have to manually create a .tool-versions file and write out the versions I want to use.`
+1. Since using asdf, I've found it really annoying that every time I want to use node or any asdf plugin (Yarn, rails, etc), I have to manually create a .tool-versions file and write out the versions I want to use.
 
-2. Without automating, this means you have to manually open up some text editor or IDE, create the file and type plugin version`.
+2. Without automating, this means you have to manually open up some text editor or IDE, create the file and type plugin version.
 
 3. It also means you have to remember the most recent versions everytime you want to use any of the plugins, which leads to frequent and unnecessary google searches or plugin-v commands
 
