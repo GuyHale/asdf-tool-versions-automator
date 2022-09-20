@@ -1,4 +1,4 @@
-# asdf-tool-versions-automator
+# automate-tool-versions-creation
 
 ## makeNode
 
