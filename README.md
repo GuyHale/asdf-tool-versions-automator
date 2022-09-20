@@ -12,7 +12,7 @@
 
 3. It also means you have to remember the most recent versions everytime you want to use any of the plugins, which leads to frequent and unnecessary google searches or plugin-v commands
 
-4. This becomes even more frustrating if you're only using node to download packages, eg react.
+4. This becomes even more frustrating if you're only using node to download packages, eg reactjs.
 
 5. Including this function in your .zshrc file will alleviate this, also definitely modify/extend the function to include other asdf plugins in the .tool-versions as well. I just most commonly use nodejs.
 
